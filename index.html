@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>FormValidation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+        <body>
+
+ <div class="flex justify-center mt-[50px]">
+            <form class="bg-purple-900 rounded w-[400px] p-10">
+
+                <p id="error" class="bg-red-200 py-3 hidden ">Fill out the form</p>
+                <label class="text-white">Enter Name</label>
+                <br>
+                <input id="username" class="w-[300px] rounded py-1 outline-0" type="text" >
+                <label class="text-white">Enter Password</label>
+                <br>
+
+                <input id="password" onkeyup="checkPasswordLength()" class="w-[300px] rounded py-1 outline-0" type="password" >
+                <br>
+                <span id="passwordText"></span>
+                <br>
+                <label class="text-white">Confirm Password</label>
+                <br>
+                <br>
+                <input id="confirmpassword" class="w-[300px] rounded py-1 outline-0" type="password" >
+                <span id="passwordError"></span>
+                <br>
+
+<button id="loginBtn" class="bg-white text-black px-10 py-2 mt-10 rounded hover:border-black" >Register</button>
+      </form>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</head>
+    
+</html>
